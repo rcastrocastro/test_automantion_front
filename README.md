@@ -18,7 +18,7 @@
 
 ### Teste:
 
-O Objetivo do teste consiste em validar o endereço da unidade no Distrito Federal através do site [Fleury](http://www.fleury.com.br)
+O Objetivo do teste consiste em validar os endereços das unidades localizadas nos Shopping's através do site [Fleury](http://www.fleury.com.br)
 
 ### ![image.png](/images/01.png)
 
@@ -43,3 +43,4 @@ Deverá ser enviado um PULL REQUEST com o seu teste.
 - Fork deste repositório (Não clonar direto)
 - Clonar a partir do repositório que foi criado na sua conta
 - Commitará e subirá as alterações para o SEU fork(repositório)
+- Abra um Pull Request para este repositório
