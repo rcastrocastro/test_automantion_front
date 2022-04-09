@@ -2,6 +2,6 @@ class HomePage
   include Capybara::DSL
 
   def home
-    visit "/"
+    visit '/'
   end
 end

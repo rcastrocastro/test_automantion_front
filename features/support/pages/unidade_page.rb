@@ -1,8 +1,8 @@
 class UnidadePage
-    include Capybara::DSL
+  include Capybara::DSL
 
   def estou_na_home
-    return find("#desktop-global-search")
+    find('#desktop-global-search')
   end
 
   def btn_unidade_click
@@ -12,19 +12,15 @@ class UnidadePage
   def digite_endereco(cidade)
     find("input[placeholder='Digite um endereço']").set cidade
     send_keys(:enter)
-    find("#button-see-on-map-2-brasilia").click
+    find('#button-see-on-map-2-brasilia').click
   end
 
-  def filtro 
-    find("#checkoox-select-facilities").click
-    find(:xpath, "//*[@id='gatsby-focus-wrapper']/div[8]/div[3]/div[3]/div[1]/div[2]/div/div[6]/label/div/div/div[3]/label").click
+  def filtro(opcao)
+    find('#checkoox-select-facilities').click
+    find('div[class*=checkbox-selectcomponentstyle__CheckboxSelectScrollStyled] > div[class*=checkbox-fieldcomponentstyle__CheckboxFieldStyled-sc]', text: opcao).click
   end
 
-  def jardim_sul
-    find("#button-see-on-map-2-shopping-jardim-sul").click
-  end
-
-  def analia  
-    find("#button-see-on-map-2-shopping-analia-franco").click
+  def detalhes_unidades(unidades)
+    find('div[class*=backgroundstyled__NeutralBackground-sc-1b1f5j3-3] > div > div:nth-child(2) > div > div', text: unidades).click
   end
 end

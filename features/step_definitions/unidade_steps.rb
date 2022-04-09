@@ -12,17 +12,15 @@ Entao('valido o endereco {string} da unidade') do |endereco|
   expect(page).to have_content endereco
 end
 
-Quando('clico em unidade filtrando por unidades em shoppings') do
+Quando('realizo o filtro por facilidades {string}') do |facilidade|
   @unidade.btn_unidade_click
-  @unidade.filtro
+  @unidade.filtro(facilidade)
 end
 
-Entao('Valido o endereco {string} da unidade Jardim Sul') do |shopping_sul|
-  @unidade.jardim_sul
-  expect(page).to have_content shopping_sul
+Quando('seleciono a unidade {string} desejada') do |unidade|
+  @unidade.detalhes_unidades(unidade)
 end
 
-Entao('Valido o endereco {string} da unidade Analia Franco') do |shopping_analia|
-  @unidade.analia
-  expect(page).to have_content shopping_analia
+Entao('Valido o endereco {string}') do |msg|
+  expect(page).to have_content msg
 end
