@@ -1,0 +1,6 @@
+---
+default: -p json -p chrome -p pretty
+chrome: BROWSER=chrome
+json: --format json --out=log/report.json
+pretty: --format pretty
+progress: --format progress
