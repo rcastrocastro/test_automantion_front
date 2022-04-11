@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
-gem 'capybara'
 gem 'cucumber'
-gem 'selenium-webdriver'
-gem 'chromedriver-helper'
 gem 'report_builder'
-
+gem 'capybara'
+gem 'poltergeist'
+gem 'rspec'
+gem 'page-object'
+gem 'site_prism'
